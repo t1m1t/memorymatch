@@ -2,6 +2,9 @@
     font-family: starwarsmain;
     src: url(fonts/starwarsmain.ttf);
 }
+html{
+    margin: 0;
+}
 body {
     width: 1000px;
     height: auto;
