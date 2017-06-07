@@ -15,7 +15,7 @@ header {
     background-image: url(images/logo.png), url(images/kylo_banner2.jpg);
     background-repeat: no-repeat;
     background-size: 160px, 1000px;
-    background-position: 40px 40px, 0px 0px;
+    background-position: 40px 40px, 0 0;
     background-color: #6a6969;
     height: 155px;
     position: relative;
@@ -129,7 +129,7 @@ a:hover {
     color: whitesmoke;
     font-family: Helvetica ,Arial, sans-serif;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    text-align: justify;
+    text-align: center;
 }
 .matt-pic-div {
     margin: auto;
