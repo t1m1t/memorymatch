@@ -2,6 +2,7 @@ $(document).ready(function() {
 $('.back').click(card_clicked);
 });
 
+
 var first_card_clicked = null;
 var second_card_clicked = null;
 var total_possible_matches = 2;
