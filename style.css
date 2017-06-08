@@ -11,7 +11,6 @@ body {
     margin: 0 auto;
     background-color: white;
     font-family: starwarsmain, Helvetica, sans-serif;
-
 }
 header {
     border-bottom: 2px solid red;
@@ -105,26 +104,35 @@ a:hover {
     text-align: center;
     width: 700px;
 }
-.card {
-    border-radius: 5px 5px 5px 5px;
-    display: inline-block;
-    width: 95px;
-    height: 130px;
-    margin: 25px 5px 5px;
-    border: 3px solid black;
-}
-.front {
+.back {
     background-image: url("images/kylo-cardback.jpg");
     background-color: #2A0306;
     background-repeat: no-repeat;
     background-size: 95px, 220px;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+.front, .back {
+    border: 2px solid white;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.card {
     display: inline-block;
     width: 95px;
     height: 130px;
+    margin: 25px 5px 5px;
+    position: relative;
 }
 
 /* About me CSS add-ons */
-
 #info_about_me {
     font-size: 20px;
     padding: 50px 200px;
