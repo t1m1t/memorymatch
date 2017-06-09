@@ -1,5 +1,6 @@
 $(document).ready(function() {
-$('.back').click(card_clicked);
+    $('.back').click(card_clicked);
+
 });
 
 
