@@ -59,6 +59,11 @@ a:hover {
     z-index: -1;
     border-top: 0;
 }
+#snow-image{
+    position: absolute;
+    z-index: 0;
+    border-top: 0;
+}
 .game-links {
     text-align: center;
     font-size: 15px;
@@ -75,13 +80,14 @@ a:hover {
 #rey {
     width: 145px;
     height: auto;
-    border: 3px solid black;
+    border: 4px solid black;
+    border-radius: 8px;
 }
 #stats_container {
     padding: 10px 10px 90px;
     width: 150px;
     float: left;
-    margin: 50px 10px 64px 50px;
+    margin: 30px 10px 0 50px;
     border-radius: 15px 15px 15px 15px;
 }
 .label {
@@ -89,11 +95,15 @@ a:hover {
     margin: 20px 0 10px;
     color: whitesmoke;
 }
-#reset_button {
-    font-family: starwarsmain, Helvetica, sans-serif;
-    padding-top: 5px;
-    height: 30px;
-    border: 2px solid black;
+.value {
+    font-family: Arial,Helvetica,sans-serif;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: red;
+    font-size: small;
+}
+
+#stats_container, .value {
+
 }
 #game_area {
     border-top: 0;
@@ -113,10 +123,10 @@ a:hover {
 .card img {
     height: 100%;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 8px;
 }
 .front, .back {
-    border: 2px solid white;
+    border: 4px solid ghostwhite;
     border-radius: 12px;
     height: 100%;
     width: 100%;
@@ -124,12 +134,26 @@ a:hover {
     left: 0;
     top: 0;
 }
+.front:hover, .back:hover{
+    transform: scale(1.2);
+}
 .card {
     display: inline-block;
     width: 95px;
     height: 130px;
     margin: 25px 5px 5px;
     position: relative;
+}
+.reset {
+    font-family: starwarsmain, Helvetica, sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 12px 10px 10px;
+    border-radius: 12px;
+    color: white;
+}
+.reset:hover {
+    color: red;
+    box-shadow: 2px 2px 2px red;
 }
 
 /* About me CSS add-ons */

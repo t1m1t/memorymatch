@@ -5,7 +5,6 @@
     <title>Memory Match Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://learning-fuze.github.io/memory_match/v0.5/script.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -23,22 +22,24 @@
     <img id="woods_wall" src="images/woods_wall.jpg">
     <div id="stats_container">
         <p id="rey_title">Rey</p>
-        <img id="rey" src="images/rey.jpg">
-        <div id="games_played_div" class="games-played">
+        <img id="rey" src="images/rey_prof.gif">
+
+        <div class="games-played">
             <p class="label">Games Played</p>
             <p class="value"></p>
         </div>
-        <div id="attempts_div" class="attempts">
+
+        <div class="attempts">
             <p class="label">Attempts</p>
             <p class="value"></p>
         </div>
-        <div id="accuracy_div" class="accuracy">
+
+        <div class="accuracy">
             <p class="label">Accuracy</p>
             <p class="value"></p>
         </div>
-        <button id="reset_button" class="reset">Reset Game</button>
+        <button type="button" class="reset">Reset Game</button>
     </div>
-
 
     <div id="game_area">
         <div class="card">
@@ -51,10 +52,83 @@
 
         <div class="card">
             <div class="front">
+                <img src="images/kyloVrey_cardBack.jpg" alt="fight">
+            </div>
+            <div class="back">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/rey.jpg" alt="rey-with-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
                 <img src="images/rey_lightsaber.jpg" alt="rey_lightsaber-front">
             </div>
             <div class="back">
 
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/bb8thumbsup.jpg" alt="bb8_thumb">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/kyloren_saber.jpg" alt="kylo-with-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/kyloren_force.jpg" alt="kylo-uses-force">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/rey_lightsaber.jpg" alt="rey_lightsaber-front">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/kylo_ren_matt_saber.jpg" alt="matt-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/luke.jpg" alt="luke">
+            </div>
+            <div class="back">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front">
+                <img src="images/bb8thumbsup.jpg" alt="bb8_thumb">
+            </div>
+            <div class="back">
             </div>
         </div>
 
@@ -68,137 +142,53 @@
 
         <div class="card">
             <div class="front">
-                <img src="images/rey_lightsaber.jpg" alt="rey_lightsaber-front">
+                <img src="images/kyloren_force.jpg" alt="kylo-uses-force">
             </div>
             <div class="back">
-
             </div>
         </div>
 
-        <!--<div class="card">-->
-        <!--<div class="front">-->
+        <div class="card">
+            <div class="front">
+                <img src="images/rey.jpg" alt="rey-with-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
 
-        <!--</div>-->
-        <!--<div class="back">-->
+        <div class="card">
+            <div class="front">
+                <img src="images/luke.jpg" alt="luke">
+            </div>
+            <div class="back">
+            </div>
+        </div>
 
-        <!--</div>-->
-        <!--</div>-->
+        <div class="card">
+            <div class="front">
+                <img src="images/kyloVrey_cardBack.jpg" alt="fight">
+            </div>
+            <div class="back">
+            </div>
+        </div>
 
-        <!--<div class="card">-->
-        <!--<div class="front">-->
+        <div class="card">
+            <div class="front">
+                <img src="images/kyloren_saber.jpg" alt="kylo-with-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
 
-        <!--</div>-->
-        <!--<div class="back">-->
+        <div class="card">
+            <div class="front">
+                <img src="images/kylo_ren_matt_saber.jpg" alt="matt-saber">
+            </div>
+            <div class="back">
+            </div>
+        </div>
 
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="card">-->
-        <!--<div class="front">-->
-
-        <!--</div>-->
-        <!--<div class="back">-->
-        <!--</div>-->
-        <!--</div>-->
+        </div>
     </div>
 </section>
 </body>
