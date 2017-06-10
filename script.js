@@ -57,8 +57,6 @@ function card_clicked() {
     }
 }
 
-var modal = $('<modal>').addClass('modalOnWin').css()
-
 var matches = 0;                       //when application finds a match, var increments by 1
 var attempts = 0;                      //when user attempts a match (2nd card click) attempts increments by 1
 var accuracy = 0;                      //accuracy = % of matches/attempts
