@@ -29,7 +29,12 @@ header {
     margin:0;
     padding-left: 370px;
     padding-top: 25px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     color: whitesmoke;
 }
 #header_title_sub {
@@ -38,7 +43,12 @@ header {
     margin:0;
     padding-left: 360px;
     padding-top: 5px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     color: whitesmoke;
 }
 #links {
@@ -48,7 +58,12 @@ header {
 a {
     color: whitesmoke;
     text-decoration: none;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
 }
 a:hover {
     color: red;
@@ -72,7 +87,12 @@ a:hover {
     display: inline-block;
 }
 #rey_title {
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     margin-top: 5px;
     margin-bottom: 9px;
     color: whitesmoke;
@@ -93,20 +113,27 @@ a:hover {
     border-radius: 15px 15px 15px 15px;
 }
 .label {
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     margin: 20px 0 10px;
     color: whitesmoke;
 }
 .value {
     font-family: Arial,Helvetica,sans-serif;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     color: red;
     font-size: small;
 }
 
-#stats_container, .value {
-
-}
 #game_area {
     border-top: 0;
     border-left: 0;
@@ -148,7 +175,13 @@ a:hover {
 }
 .reset {
     font-family: starwarsmain, Helvetica, sans-serif;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background-color: darkgrey;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     padding: 12px 10px 10px;
     border-radius: 12px;
     color: white;
@@ -165,7 +198,12 @@ a:hover {
     margin: 0;
     color: whitesmoke;
     font-family: Helvetica ,Arial, sans-serif;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;
     text-align: center;
 }
 .matt-pic-div {

@@ -44,6 +44,7 @@ function card_clicked() {
             display_stats();
             if (match_counter == total_possible_matches) {
                 display_stats();
+                window.alert("You won! Play again to better your accuracy!!");
                 console.log("You won!");
 
             } else {
@@ -57,10 +58,10 @@ function card_clicked() {
     }
 }
 
-var matches = 0;                       //when application finds a match, var increments by 1
-var attempts = 0;                      //when user attempts a match (2nd card click) attempts increments by 1
-var accuracy = 0;                      //accuracy = % of matches/attempts
-var games_played = 0;                  //when page loads, new global var defined (games_played). when game is reset, games_played increments by 1
+var matches = 0;       //when application finds a match, var increments by 1
+var attempts = 0;      //when user attempts a match (2nd card click) attempts increments by 1
+var accuracy = 0;      //accuracy = % of matches/attempts
+var games_played = 0;  //when page loads, new global var defined (games_played). when game is reset, games_played increments by 1
 
 function display_stats(){
     if (accuracy == 0 && attempts == 0){
@@ -87,32 +88,3 @@ function reset_stats() {
     display_stats();
     resetCards();
 }
-
-
-
-
-
-
-
-// var frontCards = newArray();
-// frontCards[0] = $('<div>').hasClass('front').find('img[src="images/kylo-lightsaber.jpg"]');
-// frontCards[1] = $('<div>').hasClass('front').find('img[src="images/kyloVrey_cardBack.jpg"]');
-// frontCards[2] = $('<div>').hasClass('front').find('img[src="images/rey.jpg"]');
-// frontCards[3] = $('<div>').hasClass('front').find('img[src="images/bb8thumbsup.jpg"]');
-// frontCards[4] = $('<div>').hasClass('front').find('img[src="images/kyloren_saber.jpg"]');
-// frontCards[5] = $('<div>').hasClass('front').find('img[src="images/kyloren_force.jpg"]');
-// frontCards[6] = $('<div>').hasClass('front').find('img[src="images/rey_lightsaber.jpg"]');
-// frontCards[7] = $('<div>').hasClass('front').find('img[src="images/kylo_ren_matt_saber.jpg"]');
-// frontCards[8] = $('<div>').hasClass('front').find('img[src="images/luke.jpg"]');
-//
-// var i = 0;
-// var random;
-//
-// while (i<frontCards.length) {
-//     random = Math.floor(Math.random()*frontCards.length);
-//     if (frontCards[random] != "string") {
-//         document.write(frontCards[random]);
-//         frontCards[random] = "string";
-//         i++
-//     }
-// }
