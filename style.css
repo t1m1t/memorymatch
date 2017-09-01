@@ -2,10 +2,11 @@
     font-family: starwarsmain;
     src: url(fonts/starwarsmain.ttf);
 }
+
 html{
     margin: 0;
-    cursor: url('images/light-saber.ico'), default;
 }
+
 body {
     width: 1000px;
     height: auto;
@@ -13,6 +14,7 @@ body {
     background-color: white;
     font-family: starwarsmain, Helvetica, sans-serif;
 }
+
 header {
     border-bottom: 2px solid red;
     background-image: url(images/logo.png), url(images/kylo_banner2.jpg);
@@ -23,6 +25,7 @@ header {
     height: 155px;
     position: relative;
 }
+
 #header_title {
     text-align: center;
     font-size: 40px;
@@ -37,6 +40,7 @@ header {
             1px 1px 2px black;
     color: whitesmoke;
 }
+
 #header_title_sub {
     text-align: center;
     font-size: 25px;
@@ -51,10 +55,12 @@ header {
             1px 1px 2px black;
     color: whitesmoke;
 }
+
 #links {
     margin-top: 32px;
     float: right;
 }
+
 a {
     color: whitesmoke;
     text-decoration: none;
@@ -65,9 +71,11 @@ a {
             0px 0px 0 black,
             1px 1px 2px black;
 }
+
 a:hover {
     color: red;
 }
+
 #woods_wall {
     position:absolute;
     width: 1000px;
@@ -75,17 +83,20 @@ a:hover {
     z-index: -1;
     border-top: 0;
 }
+
 #snow-image{
     position: absolute;
     z-index: 0;
     border-top: 0;
 }
+
 .game-links {
     text-align: center;
     font-size: 15px;
     margin: 20px 5px 10px;
     display: inline-block;
 }
+
 #rey_title {
     text-shadow:
             1px 1px 0 black,
@@ -98,6 +109,7 @@ a:hover {
     color: whitesmoke;
     text-align: center;
 }
+
 #rey {
     width: 145px;
     height: auto;
@@ -105,6 +117,7 @@ a:hover {
     border-radius: 8px;
     animation-delay: 1s;
 }
+
 #stats_container {
     padding: 10px 10px 90px;
     width: 150px;
@@ -112,6 +125,7 @@ a:hover {
     margin: 30px 10px 0 50px;
     border-radius: 15px 15px 15px 15px;
 }
+
 .label {
     text-shadow:
             1px 1px 0 black,
@@ -122,8 +136,16 @@ a:hover {
     margin: 20px 0 10px;
     color: whitesmoke;
 }
+
 .value {
     font-family: Arial,Helvetica,sans-serif;
+    background-color: white;
+    box-shadow:
+            1px 1px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            0px 0px 0 black,
+            1px 1px 2px black;;
     text-shadow:
             1px 1px 0 black,
             0px 0px 0 black,
@@ -143,17 +165,20 @@ a:hover {
     text-align: center;
     width: 700px;
 }
+
 .back {
     background-image: url("images/kylo-cardback.jpg");
     background-color: #2A0306;
     background-repeat: no-repeat;
     background-size: 95px, 220px;
 }
+
 .card img {
     height: 100%;
     width: 100%;
     border-radius: 8px;
 }
+
 .front, .back {
     border: 4px solid ghostwhite;
     border-radius: 12px;
@@ -163,9 +188,11 @@ a:hover {
     left: 0;
     top: 0;
 }
+
 .back:hover {
     transform: scale(1.1);
 }
+
 .card {
     display: inline-block;
     width: 95px;
@@ -173,6 +200,7 @@ a:hover {
     margin: 25px 5px 5px;
     position: relative;
 }
+
 .reset {
     font-family: starwarsmain, Helvetica, sans-serif;
     background-color: darkgrey;
@@ -186,6 +214,7 @@ a:hover {
     border-radius: 12px;
     color: white;
 }
+
 .reset:hover {
     color: red;
     box-shadow: 2px 2px 2px red;
@@ -206,10 +235,12 @@ a:hover {
             1px 1px 2px black;
     text-align: center;
 }
+
 .matt-pic-div {
     margin: auto;
     width: 50%;
 }
+
 #matt-pic {
     width: 100%;
     border: 2px solid black;
