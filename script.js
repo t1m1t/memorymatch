@@ -36,7 +36,7 @@ function card_clicked() {
             second_card_clicked = null;
             matches++;
             display_stats();
-            if (match_counter == total_possible_matches) {
+            if (match_counter === total_possible_matches) {
                 display_stats();
                 window.alert("You won! Play again to better your accuracy!!");
             }
@@ -67,6 +67,13 @@ function display_stats(){
 
 function resetCards(){
     $('.back').css('display','block');
+
+    var cards = $('.card');
+    for(var i = 0; i < cards.length; i++){
+        var target = Math.floor(Math.random() * cards.length - 1) + 1;
+        var target2 = Math.floor(Math.random() * cards.length - 1) +1;
+        cards.eq(target).before(cards.eq(target2));
+    }
 }
 
 function reset_stats() {
