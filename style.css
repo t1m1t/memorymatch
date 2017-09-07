@@ -57,12 +57,14 @@ header {
     color: whitesmoke;
 }
 
-#woods_wall {
-    position:absolute;
-    width: 1000px;
-    height: 470px;
-    z-index: -1;
-    border-top: 0;
+
+.game_zone{
+    width: 100%;
+    height: 468px;
+    background-image: url(images/woods_wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #rey_title {
@@ -94,7 +96,6 @@ header {
     float: left;
     border-radius: 15px 15px 15px 15px;
     height: 400px;
-    /*border: 2px solid white;*/
     margin: 10px 0 0 25px;
 }
 
@@ -131,7 +132,7 @@ header {
 }
 
 .back {
-    background-image: url("images/kylo-cardback.jpg");
+    background-image: url(images/kylo-cardback.jpg);
     background-color: #2A0306;
     background-repeat: no-repeat;
     background-size: 95px, 220px;
@@ -191,6 +192,7 @@ header {
         margin: 0;
         height: auto;
         width: 100%;
+        background-color: black;
     }
 
     body {
@@ -205,7 +207,7 @@ header {
         border-bottom: 2px solid red;
         background-image: url(images/logo.png), url(images/kylo_banner2.jpg);
         background-repeat: no-repeat;
-        background-size: 70px, contain;
+        background-size: 70px, cover;
         background-position: 10px 25px, 0 0;
         background-color: #6a6969;
         height: 84px;
@@ -239,13 +241,9 @@ header {
         color: whitesmoke;
     }
 
-    #woods_wall {
-        /*position:absolute;*/
-        width: 100%;
-        height: auto;
-        z-index: -1;
-        border-top: 0;
-
+    .game_zone{
+        text-align: center;
+        margin: 0 auto;
     }
 
     #rey_title {
@@ -264,18 +262,18 @@ header {
     #rey {
         width: 0;
         height: 0;
-        margin: 0 auto;
         border-radius: 0;
         visibility: hidden
     }
 
     #stats_container {
+        margin: 0;
+        width: 0;
+        margin: 20px 0 0;
+        width: 100vw;
         text-align: center;
-        width: 200px;
-        float: left;
         border-radius: 15px 15px 15px 15px;
         height: 210px;
-        margin: 10px 0 0 88px;
     }
 
     .label {
@@ -307,10 +305,11 @@ header {
         height: auto;
         text-align: center;
         width: 100%;
+        display: inline-block;
     }
 
     .back {
-        background-image: url("images/kylo-cardback.jpg");
+        background-image: url(images/kylo-cardback.jpg);
         background-color: #2A0306;
         background-repeat: no-repeat;
         background-size: 95px, 220px;
