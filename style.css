@@ -103,7 +103,7 @@ header {
     border-radius: 15px 15px 15px 15px;
     height: 400px;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
 }
 
 .label {
