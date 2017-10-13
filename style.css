@@ -98,7 +98,7 @@ header {
     border-radius: 15px 15px 15px 15px;
     height: 400px;
     display: inline-block;
-    padding-top: 100px;
+    padding-top: 50px;
     vertical-align: top;
 }
 
@@ -128,9 +128,9 @@ header {
 #game_area {
     font-size: 0;
     height: 466px;
-    width: 63%;
+    width: 900px;
     display: inline-block;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 .back {
@@ -188,7 +188,7 @@ header {
     box-shadow: 2px 2px 2px red;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1120px) {
     html{
         padding: 0;
         height: 300px;
@@ -275,13 +275,14 @@ header {
         border: 4px solid black;
         border-radius: 8px;
         animation-delay: 1s;
+        display: none;
     }
 
     #stats_container {
         text-align: center;
         width: 200px;
         border-radius: 15px 15px 15px 15px;
-        height: 400px;
+        height: 218px;
         display: inline-block;
         vertical-align: top;
     }
@@ -312,7 +313,7 @@ header {
     #game_area {
         font-size: 0;
         height: 466px;
-        width: 66%;
+        width: 900px;
         display: inline-block;
     }
 
@@ -458,11 +459,11 @@ header {
     }
 
     #stats_container {
-        margin: 0;
+        margin-top: 30px;
         width: 0;
-        margin: 20px 0 0;
         width: 100%;
         text-align: center;
+        padding: 0;
         border-radius: 15px 15px 15px 15px;
         height: 210px;
     }
@@ -496,7 +497,7 @@ header {
         border-left: 0;
         height: auto;
         text-align: center;
-        width: 100%;
+        width: 702px;
         display: inline-block;
     }
 
@@ -531,7 +532,7 @@ header {
         display: inline-block;
         width: 95px;
         height: 130px;
-        margin: 10px 11px;
+        margin: 11px 11px;
         position: relative;
     }
 
@@ -556,8 +557,80 @@ header {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .game_zone{
+        height: 100vh;
+        text-align: center;
+        margin: 0 auto;
+        border: 0;
+    }
 
-@media only screen and (max-width: 425px) {
+    #rey_title {
+        margin: 3px 0 0;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 28px;
+        text-shadow:
+                1px 1px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                1px 1px 2px black;
+    }
+
+    #rey {
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        visibility: hidden
+    }
+
+    #stats_container {
+        margin-top: 30px;
+        width: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        border-radius: 15px 15px 15px 15px;
+        height: 210px;
+    }
+
+    .label {
+        margin: 0 0 10px;
+        color: whitesmoke;
+        text-shadow:
+                1px 1px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                1px 1px 2px black;
+    }
+
+    .value {
+        font-family: Arial,Helvetica,sans-serif;
+        color: red;
+        font-size: 20px;
+        text-shadow:
+                1px 1px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                0px 0px 0 black,
+                1px 1px 2px black;
+    }
+
+    #game_area {
+        font-size: 0;
+        border-top: 0;
+        border-left: 0;
+        height: auto;
+        text-align: center;
+        width: 465px;
+        display: inline-block;
+    }
+}
+
+
+@media only screen and (max-width: 479px) {
     html{
         margin: 0;
         margin: 0 auto;
